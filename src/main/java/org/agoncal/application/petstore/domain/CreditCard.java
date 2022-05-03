@@ -8,13 +8,14 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.AllArgsConstructor;
 
 /**
  * @author Antonio Goncalves
  *         http://www.antoniogoncalves.org
  *         --
  */
-
+@AllArgsConstructor
 @Embeddable
 public class CreditCard {
 
@@ -41,12 +42,6 @@ public class CreditCard {
     // ======================================
 
     public CreditCard() {
-    }
-
-    public CreditCard(String creditCardNumber, CreditCardType creditCardType, String creditCardExpDate) {
-        this.creditCardNumber = creditCardNumber;
-        this.creditCardType = creditCardType;
-        this.creditCardExpDate = creditCardExpDate;
     }
 
     // ======================================
